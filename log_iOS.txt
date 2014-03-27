@@ -8,6 +8,11 @@ Build settings from command line:
 
 Check dependencies
 
+ProcessInfoPlistFile build/Release-iphonesimulator/pubnub.app/Info.plist pubnub/Resources/General/pubnub-Info.plist
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-infoPlistUtility /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/General/pubnub-Info.plist -genpkginfo /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/Info.plist
+
 ProcessPCH /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/pubnub-Prefix-fhuficnhkklgrdawpbplicdasmyx/pubnub-Prefix.pch.pch pubnub/pubnub-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
     setenv LANG en_US.US-ASCII
@@ -474,6 +479,188 @@ GenerateDSYMFile build/Release-iphonesimulator/pubnub.app.dSYM build/Release-iph
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/pubnub -o /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app.dSYM
+
+CopyStringsFile build/Release-iphonesimulator/pubnub.app/InfoPlist.strings pubnub/Resources/General/InfoPlist.strings
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app -- pubnub/Resources/General/InfoPlist.strings
+
+CpResource pubnub/Resources/Images/Interface/red-small-middle-segmented-button-selected.png build/Release-iphonesimulator/pubnub.app/red-small-middle-segmented-button-selected.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-middle-segmented-button-selected.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Application/Defaults/Default-568h@2x.png build/Release-iphonesimulator/pubnub.app/Default-568h@2x.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Application/Defaults/Default-568h@2x.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Application/Defaults/Default.png build/Release-iphonesimulator/pubnub.app/Default.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Application/Defaults/Default.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-small-middle-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-small-middle-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-middle-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Application/Defaults/Default@2x.png build/Release-iphonesimulator/pubnub.app/Default@2x.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Application/Defaults/Default@2x.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/pubnub-large.png build/Release-iphonesimulator/pubnub.app/pubnub-large.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/pubnub-large.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-left-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-left-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-left-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-middle-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-middle-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-middle-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CompileXIB pubnub/Resources/XIB/PNIdentificationViewController~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNIdentificationViewController~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNIdentificationViewController~ipad.xib
+2014-03-27 22:43:44.945 Interface Builder Cocoa Touch Tool[1324:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+
+CompileXIB pubnub/Resources/XIB/PNIdentificationViewController.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNIdentificationViewController.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNIdentificationViewController.xib
+2014-03-27 22:43:44.945 Interface Builder Cocoa Touch Tool[1325:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+
+CpResource pubnub/Resources/Images/Interface/red-right-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-right-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-right-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-button.png build/Release-iphonesimulator/pubnub.app/red-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/background.png build/Release-iphonesimulator/pubnub.app/background.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/background.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CompileXIB pubnub/Resources/XIB/PNMainViewController.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNMainViewController.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNMainViewController.xib
+2014-03-27 22:43:47.806 Interface Builder Cocoa Touch Tool[1330:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+
+CompileXIB pubnub/Resources/XIB/PNAuditAccessRightsView~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNAuditAccessRightsView~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNAuditAccessRightsView~ipad.xib
+2014-03-27 22:43:47.801 Interface Builder Cocoa Touch Tool[1331:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-27 22:43:48.402 Interface Builder Cocoa Touch Tool[1334:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+
+CompileXIB pubnub/Resources/XIB/PNMainViewController~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNMainViewController~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNMainViewController~ipad.xib
+2014-03-27 22:43:48.197 Interface Builder Cocoa Touch Tool[1333:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-27 22:43:48.838 Interface Builder Cocoa Touch Tool[1335:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+
+CpResource pubnub/Resources/Images/Interface/left-single-entry-background.png build/Release-iphonesimulator/pubnub.app/left-single-entry-background.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/left-single-entry-background.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/right-single-entry-background.png build/Release-iphonesimulator/pubnub.app/right-single-entry-background.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/right-single-entry-background.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CompileXIB pubnub/Resources/XIB/PNChangeAccessRightsView~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNChangeAccessRightsView~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNChangeAccessRightsView~ipad.xib
+
+CpResource pubnub/Resources/Images/Interface/left-section-header-background.png build/Release-iphonesimulator/pubnub.app/left-section-header-background.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/left-section-header-background.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-small-right-segmented-button-selected.png build/Release-iphonesimulator/pubnub.app/red-small-right-segmented-button-selected.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-right-segmented-button-selected.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/right-section-header-background.png build/Release-iphonesimulator/pubnub.app/right-section-header-background.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/right-section-header-background.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/side-menu-background.png build/Release-iphonesimulator/pubnub.app/side-menu-background.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/side-menu-background.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/pubnub-large2.png build/Release-iphonesimulator/pubnub.app/pubnub-large2.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/pubnub-large2.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-small-left-segmented-button-selected.png build/Release-iphonesimulator/pubnub.app/red-small-left-segmented-button-selected.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-left-segmented-button-selected.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/white-button.png build/Release-iphonesimulator/pubnub.app/white-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/white-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-small-right-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-small-right-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-right-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CompileXIB pubnub/Resources/XIB/PNChannelInformationView~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNChannelInformationView~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNChannelInformationView~ipad.xib
+
+CompileXIB pubnub/Resources/XIB/PNAuthorizationKeyChangeView.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNAuthorizationKeyChangeView.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNAuthorizationKeyChangeView.xib
+
+CompileXIB pubnub/Resources/XIB/PNChannelCreationView~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNChannelCreationView~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNChannelCreationView~ipad.xib
+
+CpResource pubnub/Resources/Images/Interface/red-small-left-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-small-left-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-left-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CompileXIB pubnub/Resources/XIB/PNChannelHistoryView~ipad.xib
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
+    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNChannelHistoryView~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNChannelHistoryView~ipad.xib
 
 ** BUILD SUCCEEDED **
 
