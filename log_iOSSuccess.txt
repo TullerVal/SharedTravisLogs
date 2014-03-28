@@ -563,15 +563,15 @@ CpResource pubnub/Resources/Images/Application/Defaults/Default.png build/Releas
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Application/Defaults/Default.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
 
-CpResource pubnub/Resources/Images/Interface/red-small-middle-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-small-middle-segmented-button.png
-    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
-    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-middle-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
-
 CpResource pubnub/Resources/Images/Application/Defaults/Default@2x.png build/Release-iphonesimulator/pubnub.app/Default@2x.png
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Application/Defaults/Default@2x.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
+
+CpResource pubnub/Resources/Images/Interface/red-small-middle-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-small-middle-segmented-button.png
+    cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -strip-debug-symbols -strip-tool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/strip -resolve-src-symlinks /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/Images/Interface/red-small-middle-segmented-button.png /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app
 
 CpResource pubnub/Resources/Images/Interface/pubnub-large.png build/Release-iphonesimulator/pubnub.app/pubnub-large.png
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
@@ -593,14 +593,14 @@ CompileXIB pubnub/Resources/XIB/PNIdentificationViewController~ipad.xib
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
     /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNIdentificationViewController~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNIdentificationViewController~ipad.xib
-2014-03-28 18:39:00.581 Interface Builder Cocoa Touch Tool[1824:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:04:59.980 Interface Builder Cocoa Touch Tool[1820:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 
 CompileXIB pubnub/Resources/XIB/PNIdentificationViewController.xib
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
     /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNIdentificationViewController.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNIdentificationViewController.xib
-2014-03-28 18:39:00.580 Interface Builder Cocoa Touch Tool[1825:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:04:59.979 Interface Builder Cocoa Touch Tool[1819:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 
 CpResource pubnub/Resources/Images/Interface/red-right-segmented-button.png build/Release-iphonesimulator/pubnub.app/red-right-segmented-button.png
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
@@ -622,23 +622,23 @@ CompileXIB pubnub/Resources/XIB/PNMainViewController.xib
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
     /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNMainViewController.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNMainViewController.xib
-2014-03-28 18:39:02.423 Interface Builder Cocoa Touch Tool[1830:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:05:01.698 Interface Builder Cocoa Touch Tool[1825:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 
 CompileXIB pubnub/Resources/XIB/PNAuditAccessRightsView~ipad.xib
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
     /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNAuditAccessRightsView~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNAuditAccessRightsView~ipad.xib
-2014-03-28 18:39:02.362 Interface Builder Cocoa Touch Tool[1831:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
-2014-03-28 18:39:02.980 Interface Builder Cocoa Touch Tool[1834:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:05:01.690 Interface Builder Cocoa Touch Tool[1826:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:05:02.256 Interface Builder Cocoa Touch Tool[1829:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 
 CompileXIB pubnub/Resources/XIB/PNMainViewController~ipad.xib
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247/bin:/Users/travis/.rvm/gems/ruby-2.0.0-p247@global/bin:/Users/travis/.rvm/rubies/ruby-2.0.0-p247/bin:/Users/travis/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..
     /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 5.1 --output-format human-readable-text --compile /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/build/Release-iphonesimulator/pubnub.app/PNMainViewController~ipad.nib /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp/pubnub/Resources/XIB/PNMainViewController~ipad.xib
-2014-03-28 18:39:02.831 Interface Builder Cocoa Touch Tool[1833:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
-2014-03-28 18:39:03.530 Interface Builder Cocoa Touch Tool[1836:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:05:02.085 Interface Builder Cocoa Touch Tool[1828:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
+2014-03-28 19:05:02.733 Interface Builder Cocoa Touch Tool[1831:303] CFPreferences: user home directory at file:///Users/travis/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 
 CpResource pubnub/Resources/Images/Interface/left-single-entry-background.png build/Release-iphonesimulator/pubnub.app/left-single-entry-background.png
     cd /Users/travis/build/TullerVal/objective-c/iOS/iPadDemoApp
