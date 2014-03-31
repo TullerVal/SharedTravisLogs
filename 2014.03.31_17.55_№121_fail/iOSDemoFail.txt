@@ -1,0 +1,43 @@
+Build settings from command line:
+    ARCHS = armv6 armv7 armv7s
+    ONLY_ACTIVE_ARCH = NO
+    TARGETED_DEVICE_FAMILY = 1,2
+
+=== BUILD TARGET demo9 OF PROJECT demo9 WITH CONFIGURATION Debug ===
+
+Check dependencies
+Code Sign error: No matching provisioning profile found: Your build settings specify a provisioning profile with the UUID “B59D7C51-5EF5-438E-84D0-1062028E3960”, however, no such provisioning profile was found.
+CodeSign error: code signing is required for product type 'Application' in SDK 'iOS 7.0'
+
+=== CLEAN TARGET demo9 OF PROJECT demo9 WITH CONFIGURATION Debug ===
+
+Check dependencies
+[BEROR]Code Sign error: No matching provisioning profile found: Your build settings specify a provisioning profile with the UUID “B59D7C51-5EF5-438E-84D0-1062028E3960”, however, no such provisioning profile was found.
+[BEROR]CodeSign error: code signing is required for product type 'Application' in SDK 'iOS 7.0'
+
+Create product structure
+/bin/mkdir -p /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/APNSVideo/demo9/build/Debug-iphoneos/demo9.app
+
+Clean.Remove clean /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/demo9-Prefix-dtqyhrowxyfdovcgpnxwbjjqjwfz/demo9-Prefix.pch.pch
+    builtin-rm -rf /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/demo9-Prefix-dtqyhrowxyfdovcgpnxwbjjqjwfz/demo9-Prefix.pch.pch
+
+Clean.Remove clean build/Debug-iphoneos/demo9.app
+    builtin-rm -rf /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/APNSVideo/demo9/build/Debug-iphoneos/demo9.app
+
+Clean.Remove clean /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/demo9-Prefix-emofqcehcqgexcftunumqnvwsocg/demo9-Prefix.pch.pch
+    builtin-rm -rf /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/demo9-Prefix-emofqcehcqgexcftunumqnvwsocg/demo9-Prefix.pch.pch
+
+Clean.Remove clean build/Debug-iphoneos/demo9.app.dSYM
+    builtin-rm -rf /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/APNSVideo/demo9/build/Debug-iphoneos/demo9.app.dSYM
+
+Clean.Remove clean build/demo9.build/Debug-iphoneos/demo9.build
+    builtin-rm -rf /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/APNSVideo/demo9/build/demo9.build/Debug-iphoneos/demo9.build
+
+** CLEAN SUCCEEDED **
+
+=== BUILD TARGET demo9 OF PROJECT demo9 WITH CONFIGURATION Debug ===
+
+Check dependencies
+Code Sign error: No matching provisioning profile found: Your build settings specify a provisioning profile with the UUID “B59D7C51-5EF5-438E-84D0-1062028E3960”, however, no such provisioning profile was found.
+CodeSign error: code signing is required for product type 'Application' in SDK 'iOS 7.0'
+

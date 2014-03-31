@@ -1,0 +1,43 @@
+Build settings from command line:
+    ARCHS = armv6 armv7 armv7s
+    ONLY_ACTIVE_ARCH = NO
+    TARGETED_DEVICE_FAMILY = 1,2
+
+=== BUILD TARGET ClientSidePresence OF PROJECT ClientSidePresence WITH CONFIGURATION Debug ===
+
+Check dependencies
+Code Sign error: No matching codesigning identity found: No codesigning identities (i.e. certificate and private key pairs) matching “iPhone Developer” were found.
+CodeSign error: code signing is required for product type 'Application' in SDK 'iOS 7.0'
+
+=== CLEAN TARGET ClientSidePresence OF PROJECT ClientSidePresence WITH CONFIGURATION Debug ===
+
+Check dependencies
+[BEROR]Code Sign error: No matching codesigning identity found: No codesigning identities (i.e. certificate and private key pairs) matching “iPhone Developer” were found.
+[BEROR]CodeSign error: code signing is required for product type 'Application' in SDK 'iOS 7.0'
+
+Create product structure
+/bin/mkdir -p /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/ClientSidePresence/build/Debug-iphoneos/ClientSidePresence.app
+
+Clean.Remove clean build/Debug-iphoneos/ClientSidePresence.app
+    builtin-rm -rf /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/ClientSidePresence/build/Debug-iphoneos/ClientSidePresence.app
+
+Clean.Remove clean /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/ClientSidePresence-Prefix-gsnhylpyfxowyqdplkoqvnlagzxs/ClientSidePresence-Prefix.pch.pch
+    builtin-rm -rf /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/ClientSidePresence-Prefix-gsnhylpyfxowyqdplkoqvnlagzxs/ClientSidePresence-Prefix.pch.pch
+
+Clean.Remove clean /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/ClientSidePresence-Prefix-bwjgttovyxhthiakcfsuaynxyhxq/ClientSidePresence-Prefix.pch.pch
+    builtin-rm -rf /var/folders/9x/jfhnrxj531v5427xj48tsdd00000gn/C/com.apple.DeveloperTools/5.0.2-5A3005/Xcode/SharedPrecompiledHeaders/ClientSidePresence-Prefix-bwjgttovyxhthiakcfsuaynxyhxq/ClientSidePresence-Prefix.pch.pch
+
+Clean.Remove clean build/Debug-iphoneos/ClientSidePresence.app.dSYM
+    builtin-rm -rf /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/ClientSidePresence/build/Debug-iphoneos/ClientSidePresence.app.dSYM
+
+Clean.Remove clean build/ClientSidePresence.build/Debug-iphoneos/ClientSidePresence.build
+    builtin-rm -rf /Users/travis/build/TullerVal/objective-c/iOS/HOWTO/ClientSidePresence/build/ClientSidePresence.build/Debug-iphoneos/ClientSidePresence.build
+
+** CLEAN SUCCEEDED **
+
+=== BUILD TARGET ClientSidePresence OF PROJECT ClientSidePresence WITH CONFIGURATION Debug ===
+
+Check dependencies
+Code Sign error: No matching codesigning identity found: No codesigning identities (i.e. certificate and private key pairs) matching “iPhone Developer” were found.
+CodeSign error: code signing is required for product type 'Application' in SDK 'iOS 7.0'
+
